@@ -7,7 +7,8 @@ const studentSchema = new Schema({
     age:{type: Number},
     email:{type:String, unique: true},
     phone:{type:String},
-    address:{type:String}
+    address:{type:String},
+    photo:{type:String}  // Store base64 encoded data
 })
 
 const Student =  mongoose.model('Student',studentSchema);
